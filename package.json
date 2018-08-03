@@ -1,0 +1,37 @@
+{
+  "name": "cryptopremium",
+  "version": "0.0.1",
+  "description": "ETH  rate in INR vs USD .",
+  "main": "index.js",
+  "author": "mendu",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jquery": true,
+      "node": true
+    },
+    "extends": "google",
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "require-jsdoc": 0,
+      "comma-dangle": 0,
+      "max-len": 0
+    }
+  },
+  "dependencies": {
+    "cloudscraper": "latest",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4",
+    "sound-player": "^1.0.13",
+    "telebot": "^1.2.6"
+  }
+}
