@@ -22,4 +22,4 @@ Then go to http://localhost:7777 from your browser
 
 ## preview
 
-![preview](pre.jpg)
+![preview](pre.png)
