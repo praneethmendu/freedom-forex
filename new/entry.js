@@ -24,7 +24,7 @@ $(document).ready(function() {
     // new
     let rowone = $('<tr />');
 
-    ['*', 'ZEB', 'KOI', 'ZIRN', 'KINR', 'USD'].map(coin => {
+    ['*', 'KOI', 'INR', 'USD'].map(coin => {
       rowone.append($('<th />').html(coin));
     })
     $('#tab').append(rowone);
@@ -32,20 +32,12 @@ $(document).ready(function() {
     coins.map(coin => {
       let row = $('<tr />');
       row.append($('<th />').html(coin));
-
-      //zeb
-      if (rate[coin].ZEB != null) {
-        row.append($('<th />').html(rate[coin].ZEB.toPrecision(4)));
-      } else {
-        row.append($('<th />').html('NA'));
-      }
       //koi
       if (typeof(rate[coin].KOI) != 'undefined' && rate[coin].KOI != null) {
         row.append($('<th />').html(rate[coin].KOI.toPrecision(4)));
       } else {
         row.append($('<th />').html('NA'));
       }
-      row.append($('<th />').html(prices[coin].ZEB));
       row.append($('<th />').html(prices[coin].KOI));
       row.append($('<th />').html(prices[coin].USD));
       $('#tab').append(row);
